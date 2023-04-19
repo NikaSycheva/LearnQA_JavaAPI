@@ -111,7 +111,7 @@ public class HelloWorldTest {
         Response response = RestAssured
                 .given()
                 .redirects()
-                .follow(true)
+                .follow(false)
                 .when()
                 .get("https://playground.learnqa.ru/api/get_303")
                 .andReturn();
